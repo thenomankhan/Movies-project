@@ -1,0 +1,239 @@
+:root{
+    --white:#fff;
+    --poppinsfont:'Poppins', sans-serif;
+    --kaushanfonts:'Kaushan Script', cursive;
+    --interfonts:'Inter', sans-serif;
+    --blue: #173157;
+    ;
+    --green: #244B49;
+    ;
+    --lightblue:#162741;
+}
+/* common css start */
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+ul ol li {
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+/* common css end */
+/* navbar section start */
+#home_page{
+    background: url(../images/banner.jpg);
+    object-fit: cover;
+}
+.overlay{
+    background: linear-gradient(82.06deg, rgba(1, 1, 1, 0.62) 46.14%, rgba(31, 169, 180, 0) 101.22%);
+    box-shadow: inset 0px 115px 83px rgba(0, 0, 0, 0.7);
+}
+#navbar{
+    margin-top: 35px;
+}
+#navbar ul{
+    gap: 30px;
+    margin-left: 102px;
+}
+#navbar ul li a {
+    font-family: var(--poppinsfont);
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 112%;
+    text-align: center;
+    letter-spacing: 0.15em;
+    color: var(--white);
+}
+/* navbar section end */
+/* banner section start */
+.banner_info h1{
+    font-family:var(--kaushanfonts);
+    font-weight: 400;
+    font-size: 80px;
+    line-height: 112%;
+    text-align: center;
+    letter-spacing: 0.15em;
+    color: var(--white);
+    margin-right: 238px;
+    margin-top: 85px;
+    margin-bottom: 18px;
+}
+.banner_info span{
+    font-family: var(--interfonts);
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 112%;
+    text-align: center;
+    letter-spacing: 0.15em;
+    color: var(--white);
+}
+.banner_info p{
+    font-family: var(--interfonts);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.15em;
+    color: var(--white);
+    padding-right: 100px;
+    margin-top: 11px;
+}
+.button_info {
+    display: flex;
+    justify-content:left;
+    align-items: center;
+    gap: 39px;
+    margin-top: 34px;
+}
+.button_info .button_1 a{
+    font-family: 'Inter';
+    font-weight: 600;
+    font-size: 29px;
+    line-height: 112%;
+    text-align: center;
+    letter-spacing: 0.15em;
+    color: var(--blue);
+    background: var(--white);
+    padding: 16px 20px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    transition: all linear .3s;
+}
+.button_info .button_1 a svg{
+    fill: var(--blue);
+    transition: all linear .3s;
+}
+.button_info .button_1 a:hover svg{
+    fill: var(--white);
+}
+.button_info .button_1 a:hover{
+    color: var(--white);
+    background: var(--blue);
+    stroke: var(--white);
+}
+
+.button_info .button_2 a{
+    font-family: 'Inter';
+    font-weight: 600;
+    font-size: 29px;
+    line-height: 112%;
+    text-align: center;
+    letter-spacing: 0.15em;
+    color: var(--white);
+    background: var(--green);
+    padding: 16px 20px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    transition: all linear .3s;
+}
+.button_info .button_2 a:hover{
+    color: var(--blue);
+    background: var(--white);
+    fill: var(--blue);
+}
+.normal_info {
+    
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    margin-top: 28px;
+}
+.normal_info span{
+    font-family: var(--poppinsfont);
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 112%;
+    letter-spacing: 0.15em;
+    color: #D9D9D9;
+}
+
+/* banner section end */
+/* entertainment section start */
+#entertainment{
+    background: var(--lightblue);
+}
+.info_area{
+    margin:122px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+}
+.info_area h2{
+    font-family: 'Inter';
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 112%;
+    letter-spacing: 0.15em;
+    color: var(--white);
+}
+.info_area p{
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.15em;
+    color: var(--white);
+    margin-top: 27px;
+}
+.info_area a{
+    font-family: 'Inter';
+    font-weight: 600;
+    font-size: 29px;
+    line-height: 112%;
+    text-align: center;
+    letter-spacing: 0.10em;
+    color: var(--blue);
+    background: var(--white);
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-top: 18px;
+    transition: all linear .3s;
+}
+.info_area a:hover{
+    background: var(--blue);
+    color: var(--white);
+}
+.info_area .movie_image{
+    max-width: 100%; 
+    height: auto;
+}
+/* entertainment section end */
+
+#footer_info{
+    background: #101C2E;
+}
+.social_info{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.social_info .col-lg-9{
+   text-align: right;
+    
+}
+.icon_sec a{
+    font-size: 20px;
+    color: var(--white);
+    border: 1px solid var(--white);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+}
+.icon_sec a:hover{
+    color: red;
+    border: 1px solid red;
+}
