@@ -213,27 +213,61 @@ a{
 
 #footer_info{
     background: #101C2E;
+   
+
 }
 .social_info{
     margin-top: 30px;
     display: flex;
-    justify-content: space-between;
+    justify-content:center;
     align-items: center;
-}
-.social_info .col-lg-9{
-   text-align: right;
+    
+} 
+.social_info .col-lg-4{
+   text-align: left;
     
 }
+.icon_sec{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    gap: 30px;
+}
+
 .icon_sec a{
-    font-size: 20px;
     color: var(--white);
     border: 1px solid var(--white);
     border-radius: 50%;
     width: 40px;
     height: 40px;
-    text-align: center;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    transition: all linear .2s;
 }
-.icon_sec a:hover{
+.icon_sec a i{
+    font-size: 20px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+.icon_sec .icon_facebook a:hover{
+    color: red;
+    border: 1px solid red;
+}
+.icon_sec .icon_twitter a:hover{
+    color: rgb(20, 151, 202);
+    border: 1px solid rgb(20, 151, 202);
+}
+.icon_sec .icon_linkedin a:hover{
+    color: #0077b5;
+    border: 1px solid #0077b5;
+}
+.icon_sec .icon_pinterest a:hover{
+    color: #c8232c;
+    border: 1px solid #c8232c;
+}
+.icon_sec .icon_behance a:hover{
     color: red;
     border: 1px solid red;
 }
